@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Age calculator app</title>
+  <script src="script.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,400;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="container">
+
+        <form action="">
+            <section class="input-section">
+                <label for="day"  id="day-label">DAY
+                    <input type="text" name="day" id="day" placeholder="DD" maxlength="2">
+                    <p class="empty-error" id="day-empty">This field is required</p>
+                    <p class="valid-error" id="day-invalid">Must be a valid day</p>
+
+                </label>
+                
+                <label for="month" id="month-label">MONTH
+                    <input type="text" name="month" id="month" placeholder="MM" maxlength="2">
+                    <p class="empty-error" id="month-empty">This field is required</p>
+                    <p class="valid-error" id="month-invalid">Must be a valid month</p>
+
+
+                </label>
+               
+                <label for="year" id="year-label">YEAR
+                    <input type="text" name="year" id="year" placeholder="YYYY" maxlength="4">
+                    <p class="empty-error" id="year-empty">This field is required</p>
+                    <p class="valid-error" id="year-invalid">Must be a valid year</p>
+
+                </label>
+            </section>
+           <div class="btn">
+                <div class="line"></div>
+                <div id="arrow-btn">
+                    <img src="images/icon-arrow.svg" alt="">
+                </div>
+           </div>
+        </form>
+
+        <section id="results">
+
+            <h2 id="year-result"><span>--</span>years</h2>
+            <h2 id="month-result"><span>--</span>months</h2>
+            <h2><span>--</span>days</h2>
+        </section>
+    </div>
+</body>
+</html>
